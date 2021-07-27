@@ -24,7 +24,7 @@ brower = webdriver.Chrome(executable_path='chromedriver.exe')
 link = 'https://diemthi.tuyensinh247.com/diem-thi-tot-nghiep-thpt/bac-ninh-59.html'
 brower.get(link)
 
-
+#Duyệt toàn bộ SBD thí sinh tỉnh Bắc Ninh
 for i in range(19000101,19016389):
     sbd = brower.find_element_by_xpath('/html/body/div[1]/div[4]/div/div/div[3]/div[2]/div[1]/div[2]/div/input')
     sbd.clear()
